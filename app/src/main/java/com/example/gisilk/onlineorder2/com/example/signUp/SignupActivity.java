@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.gisilk.onlineorder2.LoginActivity;
 import com.example.gisilk.onlineorder2.R;
+import com.example.gisilk.onlineorder2.com.example.UserProfile.UserProfileActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -86,7 +87,7 @@ public class SignupActivity extends AppCompatActivity {
                             Toast.makeText(SignupActivity.this, "Authentication failed." + task.getException(),
                                     Toast.LENGTH_SHORT).show();
                         } else {
-                            startActivity(new Intent(SignupActivity.this, LoginActivity.class));
+                            startActivity(new Intent(SignupActivity.this, UserProfileActivity.class));
                             finish();
                         }
 
